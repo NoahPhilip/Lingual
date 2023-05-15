@@ -1,0 +1,94 @@
+<html>
+    <style>
+        body {
+		background: linear-gradient(-45deg, #94B9FF, #cdffd8, #94B9FF, #cdffd8);
+		background-size: 400% 400%;
+		animation: gradient 30s ease infinite;
+		height: 100%;
+	    }
+
+        @keyframes gradient {
+		0% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 0% 0%;
+	    }
+    }
+
+        .left {
+            width: 40%;
+			flex: 1;
+            background-color: rgb(235, 234, 234);
+            color: rgb(161, 161, 161);
+            font-size: 100%;
+            font-weight: bold;
+            border-radius: 1rem;
+            border: none;
+            margin: 1%;
+            cursor: auto;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            height: 95%;
+        }
+
+        .right {
+			width: 40%;
+			flex: 1;
+            background-color: rgb(235, 234, 234);
+            color: rgb(161, 161, 161);
+            font-size: 100%;
+            font-weight: bold;
+            border-radius: 1rem;
+            border: none;
+			text-align: center;
+            margin: 1%;
+            cursor: auto;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            height: 95%;
+        }
+		.rightt {
+			width: 90%;
+			flex: 1;
+            background-color: rgb(184, 226, 250);
+            color: black;
+            font-size: 100%;
+            font-weight: bold;
+            border-radius: 1rem;
+            border: none;
+            margin-left: 5%;
+            cursor: auto;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            height: 20%;
+        }
+		.sub{
+			margin-top: 25%;
+			display: inline-block;
+			height: 5%;
+			cursor: pointer;
+		}
+		form {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+        }
+    </style><body>
+        
+	<form method="POST" action="/lingual">
+		<input type="text" class = "left" value = "START TYPING" name="text"><br>
+
+		<input type="submit" class = "sub" value="Submit">
+        <div class = "right">
+			<p class = "rightt" id = "modified_text">{{ modified_text }}</p>
+		<p class = "rightt" id = "modified_text">{{ modified_textt }}</p>
+		<p class = "rightt" id = "modified_text">{{ modified_texttt }}</p>
+		<p class = "rightt" id = "modified_text">{{ modified_textttt }}</p>
+		</div>
+	</form>
+    </body>
+</html>
