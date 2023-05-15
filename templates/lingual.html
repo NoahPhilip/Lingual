@@ -1,5 +1,7 @@
-
 <html>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;705&display=swap" rel="stylesheet">
     <style>
         body {
 		background: linear-gradient(-45deg, #94B9FF, #cdffd8, #94B9FF, #cdffd8);
@@ -20,13 +22,15 @@
 	    }
     }
 
-        .left {
+		.left {
             width: 40%;
+			
 			flex: 1;
             background-color: rgb(235, 234, 234);
             color: rgb(161, 161, 161);
             font-size: 100%;
             font-weight: bold;
+			padding: 2%;
             border-radius: 1rem;
             border: none;
             margin: 1%;
@@ -55,17 +59,19 @@
 		.rightt {
 			width: 90%;
 			flex: 1;
+			padding: 2% 0%;
             background-color: rgb(184, 226, 250);
             color: black;
             font-size: 100%;
             font-weight: bold;
+			font-family: 'League Spartan';
             border-radius: 1rem;
             border: none;
             margin-left: 5%;
             cursor: auto;
             transition: all 0.3s ease-in-out;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            height: 20%;
+            height: 16%;
         }
 		.sub{
 			margin-top: 25%;
@@ -81,7 +87,7 @@
     </style><body>
         
 	<form method="POST" action="/lingual">
-		<input type="text" class = "left" value = "START TYPING" name="text"><br>
+		<input type="text" class = "left" style="vertical-align: top;" value = "START TYPING" name="text"><br>
 
 		<input type="submit" class = "sub" value="Submit">
         <div class = "right">
